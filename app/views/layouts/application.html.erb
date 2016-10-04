@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+
 <html>
   <head>
-    <title>Schoolpl</title>
+    <title>Escola</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +10,11 @@
   </head>
 
   <body>
+  	 <ul>
+  		<li><%= link_to "Alunos", alunos_path %></li>
+  		<li><%= link_to "Cursos", cursos_path %></li>
+  		<li><%= link_to "Matriculas", matriculas_path %></li>
+	</ul> 
     <%= yield %>
   </body>
 </html>
