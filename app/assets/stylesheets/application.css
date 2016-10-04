@@ -29,14 +29,23 @@ li {
 
 li a {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-
 li a:hover {
     background-color: #1E90FF;
 }
+
+.active {
+    background-color: #1E90FF;
+}
 /* END-- MENU --*/
+
+
+
+body {
+    background-image: url(backin.jpg);
+    background-color: #cccccc;
+}

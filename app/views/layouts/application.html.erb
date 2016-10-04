@@ -10,11 +10,14 @@
   </head>
 
   <body>
-  	 <ul>
-  		<li><%= link_to "Alunos", alunos_path %></li>
-  		<li><%= link_to "Cursos", cursos_path %></li>
-  		<li><%= link_to "Matriculas", matriculas_path %></li>
-	</ul> 
+  	<nav id="menu">
+  		 <ul>
+  			<li><%= link_to "Alunos", alunos_path %></li>
+  			<li><%= link_to "Cursos", cursos_path %></li>
+  			<li><%= link_to "Matriculas", matriculas_path %></li>
+  			<li style="float:right"><a class="active" href="#about">About</a></li>
+		</ul> 
+	</nav>
     <%= yield %>
   </body>
 </html>
