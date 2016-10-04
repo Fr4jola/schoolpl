@@ -14,9 +14,6 @@
  *= require_self
  */
 
-
-@import "compass/css3";
-
 /* BEGIN -- MENU -- */
 ul {
     list-style-type: none;
