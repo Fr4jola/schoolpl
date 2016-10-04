@@ -1,0 +1,36 @@
+<%= form_for(curso) do |f| %>
+  <% if curso.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(curso.errors.count, "error") %> prohibited this curso from being saved:</h2>
+
+      <ul>
+      <% curso.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %>
+    <%= f.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= f.label :valor_inscricao %>
+    <%= f.text_field :valor_inscricao %>
+  </div>
+
+  <div class="field">
+    <select name="post[category]" id="post_category">
+      <option value=""></option>
+      <option value="matutino">Matutino</option>
+      <option value="vespertino">Vespertino</option>
+      <option value="integral">Integral</option>
+    </select>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

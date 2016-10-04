@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Aluno:</strong>
+  <%= @matricula.aluno.nome %>
+</p>
+
+<p>
+  <strong>Curso:</strong>
+  <%= @matricula.curso.nome %>
+</p>
+
+<p>
+  <strong>Data matricula:</strong>
+  <%= @matricula.data_matricula %>
+</p>
+
+<p>
+  <strong>Ano:</strong>
+  <%= @matricula.ano %>
+</p>
+
+<p>
+  <strong>Ativo:</strong>
+  <%= @matricula.ativo %>
+</p>
+
+<p>
+  <strong>Pago:</strong>
+  <%= @matricula.pago %>
+</p>
+
+<%= link_to 'Edit', edit_matricula_path(@matricula) %> |
+<%= link_to 'Back', matriculas_path %>
