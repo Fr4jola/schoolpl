@@ -20,7 +20,7 @@
     <%= f.label :curso_id %>
     <%= f.collection_select(:curso_id, Curso.all, :id, :nome, prompt: true) %>
   </div>
-  
+
   <div class="field">
     <%= f.label :data_matricula %>
     <%= f.date_select :data_matricula %>
