@@ -15,12 +15,3 @@
 //= require turbolinks
 //= require_tree .
 
-function ano_bissexto($ano) {
-
-if(date('L', mktime(0, 0, 0, 1, 1, $ano))) {
-echo "Ano bissexto.";
-}
-else {
-echo "Ano não bissexto.";
-}
-}
