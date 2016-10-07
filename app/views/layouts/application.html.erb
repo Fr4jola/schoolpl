@@ -4,7 +4,6 @@
   <head>
     <title>Escola</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -12,12 +11,12 @@
   <body>
   	<nav id="menu">
   		 <ul>
-  			<li><%= link_to "Alunos", alunos_path %></li>
-  			<li><%= link_to "Cursos", cursos_path %></li>
-  			<li><%= link_to "Matriculas", matriculas_path %></li>
-  			<li style="float:right"><a class="active" href="#about">About</a></li>
-		</ul> 
-	</nav>
+  			 <li><%= link_to "Alunos", alunos_path %></li>
+  			 <li><%= link_to "Cursos", cursos_path %></li>
+  			 <li><%= link_to "Matriculas", matriculas_path %></li>
+  			 <li style="float:right"><a class="active" href="/">About</a><li>
+		   </ul> 
+	   </nav>
     <%= yield %>
   </body>
 </html>
