@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= f.label :data_nascimento %>
-    <%= f.date_select :data_nascimento %>
+    <%= f.date_select :data_nascimento, order: [:month, :day, :year], prompt: { day: 'Selecione o dia', month: 'Selecione o mês', year: 'Selecione o Ano' }, start_year: Date.today.year - 17, end_year: Date.today.year - 150 %>
   </div>
 
   <div class="field">
